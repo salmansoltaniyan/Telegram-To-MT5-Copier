@@ -13,7 +13,7 @@
 // Author: Salman Soltaniyan
 // You can post a job for me: https://www.mql5.com/en/job/new?prefered=salmansoltaniyan
 
-#include "Include\\Telegram.mqh"
+#include <Telegram.mqh>
 
 // Custom bot class to access protected members
 class CTradingBot : public CCustomBot
@@ -85,7 +85,7 @@ public:
   };
 
 // Input parameters
-input string   TelegramBotToken = "7242831612:AAEo_5Z3h_SDX6U0pfCVXzapFLNkmcornms";  // Your Telegram Bot Token
+input string   TelegramBotToken = "";  // Your Telegram Bot Token
 input int      UpdateInterval = 1;     // Check for updates every X seconds
 
 // Global variables
